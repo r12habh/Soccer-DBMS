@@ -1,0 +1,7 @@
+CREATE DEFINER=`root`@`localhost` PROCEDURE `coach_delete`(IN `c_id` INT) NOT DETERMINISTIC CONTAINS SQL SQL SECURITY DEFINER DELETE FROM coach WHERE coachid=c_id
+
+
+
+STATS
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `stats_delete`(IN `$playerid` INT) NOT DETERMINISTIC CONTAINS SQL SQL SECURITY DEFINER DELETE FROM stats WHERE playerid=$playerid
